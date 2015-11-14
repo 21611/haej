@@ -2,7 +2,7 @@
 <!--social media-->
 <div class="socialmedia-container">
 <div class="row">
-  <div class="small-3 medium-2 small-centered columns socialmedia-title">
+  <div class="small-4 medium-3 small-centered columns socialmedia-title">
     <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/socialmedia.png" alt="">
   </div>
   <div class="row">
@@ -18,24 +18,24 @@
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="container-form">
-<div class="small-3 medium-2 small-centered columns newsletter-title">
+<div class="small-6 medium-3 small-centered columns newsletter-title">
  <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/newsletter.png" alt="">
   </div>
 <form action="//haej.us11.list-manage.com/subscribe/post?u=a5c26df19ee004d331bb2248b&amp;id=84850c1494" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ac-custom ac-radio ac-fill form-newsletter__container" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<input type="text" value="" name="NAME" class="required" id="mce-NAME" placeholder="NAME">
+			<input type="text" value="" name="NAME" class="required form_textarea" id="mce-NAME" placeholder="NAME">
 		</div>
 	</div>
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-MAIL">
+			<input type="email" value="" name="EMAIL" class="required email form_textarea" id="mce-EMAIL" placeholder="E-MAIL">
 		</div>
 	</div>
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<input type="text" value="" name="ADDRESS" class="" id="mce-ADDRESS" placeholder="ADDRESS">
+			<input type="text" value="" name="ADDRESS" class="form_textarea" id="mce-ADDRESS" placeholder="ADDRESS">
 		</div>
 	</div>
 	<div class="mc-field-group input-group">
@@ -49,19 +49,19 @@
     <ul>
     	<li>
     		<input type="radio" value="ご本人がHAE患者" name="RELATION" id="mce-RELATION-0">
-    		<label for="mce-RELATION-0">ご本人がHAE患者</label>
+    		<label class="newslatter-form__subtext" for="mce-RELATION-0">ご本人がHAE患者</label>
     	</li>
     	<li>
 				<input type="radio" value="患者家族" name="RELATION" id="mce-RELATION-1">
-				<label for="mce-RELATION-1">患者家族</label>
+				<label class="newslatter-form__subtext" for="mce-RELATION-1">患者家族</label>
 			</li>
 			<li>
 			 <input type="radio" value="医師など医療関係者" name="RELATION" id="mce-RELATION-2">
-				<label for="mce-RELATION-2">医師など医療関係者</label>
+				<label class="newslatter-form__subtext" for="mce-RELATION-2">医師など医療関係者</label>
 			</li>
 			<li>
 			 <input type="radio" value="それ以外" name="RELATION" id="mce-RELATION-3">
-				<label for="mce-RELATION-3">それ以外</label>
+				<label class="newslatter-form__subtext" for="mce-RELATION-3">それ以外</label>
 			</li>
 		</ul>
 	</div>

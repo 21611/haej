@@ -10130,6 +10130,12 @@ FOOTER STYLES
   margin-top: 4%;
   margin-bottom: 5%;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .newsletter-title {
+    margin-top: 0;
+    margin-bottom: 7%;
+  }
+}
 
 /*********************
 FOUNDATION STYLES
@@ -10184,9 +10190,15 @@ Animated checkboxes
   font-size: 1.2em;
   padding: 0 0 0 80px;
   vertical-align: top;
-  color: #333333;
+  color: rgba(51, 51, 51, 0.6);
   cursor: pointer;
   transition: color 0.3s;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .ac-custom label {
+    font-size: 14px;
+    padding: 0 0 10px 40px;
+  }
 }
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"], .ac-custom label::before {
   width: 40px;
@@ -10196,6 +10208,12 @@ Animated checkboxes
   margin-top: -25px;
   position: absolute;
   cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .ac-custom input[type="checkbox"], .ac-custom input[type="radio"], .ac-custom label::before {
+    width: 30px;
+    height: 30px;
+  }
 }
 .ac-custom input[type="checkbox"], .ac-custom input[type="radio"] {
   opacity: 0;
@@ -10216,7 +10234,7 @@ Animated checkboxes
 
 .ac-custom input[type="checkbox"]:checked + label,
 .ac-custom input[type="radio"]:checked + label {
-  color: #fff;
+  color: #333333;
 }
 
 .ac-custom input[type="checkbox"]:checked + label::before,
@@ -10236,7 +10254,7 @@ Animated checkboxes
 }
 
 .ac-custom svg path {
-  stroke: #fdfcd3;
+  stroke: rgba(51, 51, 51, 0.6);
   stroke-width: 13px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -10256,7 +10274,7 @@ Animated checkboxes
 }
 
 .ac-circle label::before {
-  background-color: #fff;
+  background-color: #333333;
   border: none;
 }
 
@@ -10362,4 +10380,26 @@ form
 
 .form-newsletter__container {
   font-weight: 300;
+}
+
+.form_textarea {
+  outline-style: none;
+  text-indent: .25em;
+  border-radius: 0px;
+  color: #e8e5d5 !important;
+  border: 0 none !important;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline-style: none;
+  padding: 10px 12px;
+  box-shadow: 0px 0px 0px 0px #fff;
+  -webkit-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -transition: all 0.2s;
+  transition: all 0.2s;
+}
+.form_textarea:hover, .form_textarea:focus {
+  background-color: rgba(51, 51, 51, 0.6) !important;
+  box-shadow: 0px 0px 0px 0px #fff;
 }

@@ -47,10 +47,12 @@ FOOTER STYLES
 }
 
 .newsletter-title {
-    
-
-    margin-top: 4%;
-    margin-bottom: 5%;
+	margin-top: 4%;
+	margin-bottom: 5%;
+	@include mqXS{
+		margin-top: 0;
+		margin-bottom: 7%;
+	}
 
   }
 
@@ -113,10 +115,16 @@ Animated checkboxes
 			font-size: 1.2em;
 			padding: 0 0 0 80px;
 			vertical-align: top;
-			color: $text;
+			color: $text-bright;
 			cursor: pointer;
 			-webkit-transition: color 0.3s;
-			transition: color 0.3s;}
+			transition: color 0.3s;
+			@include mqXS{
+				font-size:14px;
+				padding: 0 0 10px 40px;
+			}
+
+		}
 
 			input[type="checkbox"],input[type="radio"],label::before {
 			width: 40px;
@@ -125,7 +133,13 @@ Animated checkboxes
 			left: 0;
 			margin-top: -25px;
 			position: absolute;
-			cursor: pointer;}
+			cursor: pointer;
+			@include mqXS {
+			width: 30px;
+			height: 30px;
+
+			}
+		}
 
 			input[type="checkbox"],input[type="radio"] {
 			opacity: 0;
@@ -151,7 +165,7 @@ Animated checkboxes
 
 .ac-custom input[type="checkbox"]:checked + label,
 .ac-custom input[type="radio"]:checked + label {
-	color: #fff;
+	color: #333333;
 } 
 
 .ac-custom input[type="checkbox"]:checked + label::before,
@@ -172,7 +186,7 @@ Animated checkboxes
 }
 
 .ac-custom svg path {
-	stroke: #fdfcd3;
+	stroke: $text-bright;
 	stroke-width: 13px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -193,7 +207,7 @@ Animated checkboxes
 }
 
 .ac-circle label::before {
-	background-color: #fff;
+	background-color: #333333;
 	border: none;
 }
 
@@ -297,8 +311,28 @@ form
 }
 
 
+.newslatter-form__subtext{
+
+}
 
 
+.form_textarea{
+	outline-style: none;
+	text-indent: .25em;
+	border-radius: 0px;
+	color: #e8e5d5 !important;
+	border: 0 none !important;
+	font-size: 18px;
+	letter-spacing: 2px;
+	outline-style: none;
+	padding: 10px 12px;
+	@include box-shadow(0px 0px 0px 0px #fff);
+ @include transition(all 0.2s);
+ 	&:hover, &:focus{
+		background-color: $text-bright !important;
+		@include box-shadow(0px 0px 0px 0px #fff);
+ 	}
+}
 
 
 
