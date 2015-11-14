@@ -9962,7 +9962,7 @@ NAVIGATION STYLES
 }
 
 .top-bar-nav__container-mobile {
-  background-color: white;
+  background-color: rgba(248, 247, 240, 0.89);
 }
 
 .top-bar__nav-icon-mobile {
@@ -9985,6 +9985,10 @@ NAVIGATION STYLES
   list-style: none;
   padding: 5% 0;
   display: inline-block;
+}
+
+.move-right .exit-off-canvas {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5), 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 /*********************
