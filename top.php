@@ -5,6 +5,13 @@ Template Name: top
 ?>
 <?php get_header(); ?>
 
+<div class="top-top__container">
+	<div class="top-top__text">
+		<p>Feel good talking to someone</p>
+		<p>わかりあえると、心強い。</p>
+	</div>
+</div>
+
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   

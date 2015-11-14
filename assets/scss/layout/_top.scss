@@ -1,0 +1,43 @@
+/*********************
+top-page
+*********************/
+
+.top-top__container{
+	background-size:cover;
+	background-image: url('../images/top-img-lg.jpg');
+	height:500px;
+	@include mqXS{
+	background-image: url('../images/top-img-sm.jpg');
+	height:400px;
+	}
+}
+.top-top__text{
+	color:white;
+	top: 50%;
+	position: relative;
+	left: 10%;
+	p {
+		font-size: 26px;
+		font-weight: 200;
+	}
+}
+.top-text {
+	width: 40%;
+	position: relative;
+	top: -260px;
+	left: 30px;
+	@include mqXS{
+		top: 30%;
+	}
+}
+
+.top-news-container{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-news-contents{
+	line-height: 1.8em;
+
+}

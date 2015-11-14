@@ -99,8 +99,8 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-bold: bold;
 $gray        : #4d4d4d;
 $white       : #FFFFFF;
-$orange      :  #ffb487;
-$text        :  #484848;
+$orange      : #ffb487;
+$text        : #333333;;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -155,6 +155,31 @@ $text        :  #484848;
 
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+@mixin mqLG {
+  @media (min-width: 1200px) and (max-width: 1920px) { @content; }
+}
+@mixin mqMD {
+  @media (min-width: 992px) and (max-width: 1199px) { @content; }
+}
+@mixin mqSM {
+  @media (min-width: 768px) and (max-width: 991px) { @content; }
+}
+@mixin mqXS {
+  @media (min-width: 320px) and (max-width: 767px) { @content; }
+}
+
+@mixin mqSM-LG {
+  @media (min-width: 320px) and (max-width: 767px) { @content; }
+}
+@mixin mqXS-SM {
+  @media (min-width: 320px) and (max-width: 991px) { @content; }
+}
+@mixin mqMD-LG {
+  @media (min-width: 992px) and (max-width: 1920px) { @content; }
+}
+
 
 // $small-breakpoint:  em-calc(640);
 // $medium-breakpoint: em-calc(1024);

@@ -7,7 +7,6 @@ all of your Sass files so they can compile into one
 CSS file. 
 ******************************************************************/
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -9534,10 +9533,6 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
-body {
-  font-family: 'Noto Sans Japanese', serif;
-}
-
 /*********************
 HELPER STYLES
 *********************/
@@ -9570,6 +9565,77 @@ H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+.header:before, .header:after {
+  content: " ";
+  display: table;
+}
+.header:after {
+  clear: both;
+}
+.header ul.off-canvas-list li {
+  list-style: none;
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.top-bar {
+  top: 30px;
+}
+.top-bar .title-area {
+  z-index: 1;
+}
+
+.top-bar-nav-right li a {
+  font-size: 16px !important;
+}
+
+.top-bar-section-a {
+  height: 100px;
+  color: #484848;
+}
+
+.page-template-top .top-bar-section-a {
+  color: #FFFFFF !important;
+}
+.page-template-top ul li a {
+  color: #FFFFFF !important;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.off-canvas-list ul {
+  margin-left: 0;
+}
+.off-canvas-list ul li a {
+  border-bottom: 0px;
+}
+.off-canvas-list ul .dropdown {
+  margin-left: 20px;
+}
+
+body.f-topbar-fixed {
+  padding-top: 0 !important;
+}
+
+.nav-top-c {
+  position: fixed;
+  background-color: transparent;
+  background: transparent;
+  transition: all .25s ease-in-out;
+}
+
+.scrolled {
+  background: #444444;
+  background-color: rgba(255, 180, 135, 0.6);
 }
 
 /*********************
@@ -9663,6 +9729,9 @@ POSTS & CONTENT STYLES
   color: #FFFFFF;
 }
 
+/*********************
+IMAGE GALLERY STYLES
+*********************/
 /*********************
 PAGE NAVI STYLES
 *********************/
@@ -9776,7 +9845,6 @@ COMMENT FORM STYLES
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
-  font-family: 'Noto Sans Japanese', serif;
 }
 .respond-form form {
   margin: 0.75em 0;
@@ -9785,7 +9853,6 @@ COMMENT FORM STYLES
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
-  font-weight: 300;
 }
 .respond-form form li label,
 .respond-form form li small {
@@ -9858,225 +9925,6 @@ SIDEBARS & ASIDES
 
 #sidebar-offcanvas .widgettitle {
   color: #fff;
-}
-
-/*********************
-HEADER STYLES
-*********************/
-.header:before, .header:after {
-  content: " ";
-  display: table;
-}
-.header:after {
-  clear: both;
-}
-.header ul.off-canvas-list li {
-  list-style: none;
-}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-.top-bar {
-  top: 30px;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -transition: all 0.3s;
-  transition: all 0.3s;
-}
-.top-bar .title-area {
-  z-index: 1;
-  margin-left: 10%;
-}
-
-.top-bar-nav-right li a {
-  font-size: 14px !important;
-}
-
-.top-bar-section-text {
-  color: white !important;
-}
-
-.top-bar-section-subtext {
-  color: white !important;
-}
-
-.logo {
-  max-width: 150px;
-  height: auto;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.logo-mobile {
-  width: 100px;
-  height: 100%;
-}
-
-.off-canvas-list ul {
-  margin-left: 0;
-}
-.off-canvas-list ul li a {
-  border-bottom: 0px;
-}
-.off-canvas-list ul .dropdown {
-  margin-left: 20px;
-}
-
-.f-topbar-fixed {
-  padding-top: 0 !important;
-}
-
-.nav-top-c {
-  position: fixed;
-  background-color: transparent;
-  background: transparent;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.scrolled {
-  background: #444444;
-  background-color: rgba(255, 180, 135, 0.6);
-}
-.scrolled .logo {
-  max-width: 120px;
-}
-.scrolled .top-bar {
-  top: 10px;
-}
-.scrolled .top-bar-section-a {
-  height: 70px;
-}
-
-.top-bar-nav__list-container-mobile {
-  list-style: none !important;
-  text-decoration: none;
-}
-
-.top-bar-nav__container-mobile {
-  background-color: white;
-}
-
-.top-bar__nav-icon-mobile {
-  border-right: solid 0px;
-  background-color: rgba(191, 191, 191, 0.35);
-}
-
-.top-bar-nav__list-title-mobile {
-  color: black;
-  padding-top: 5%;
-  margin-bottom: -1%;
-}
-
-.top-bar-nav__list-subtitls-mobile {
-  text-decoration: none;
-  list-style: none;
-}
-
-.top-bar-nav__list-subtitle-mobile {
-  list-style: none;
-  padding: 5% 0;
-  display: inline-block;
-}
-
-/*********************
-top-page
-*********************/
-.top-top__container {
-  background-size: cover;
-  background-image: url("../images/top-img-lg.jpg");
-  height: 500px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .top-top__container {
-    background-image: url("../images/top-img-sm.jpg");
-    height: 400px;
-  }
-}
-
-.top-top__text {
-  color: white;
-  top: 50%;
-  position: relative;
-  left: 10%;
-}
-.top-top__text p {
-  font-size: 26px;
-  font-weight: 200;
-}
-
-.top-text {
-  width: 40%;
-  position: relative;
-  top: -260px;
-  left: 30px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .top-text {
-    top: 30%;
-  }
-}
-
-.top-news-container {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.top-news-contents {
-  line-height: 1.8em;
-}
-
-/*********************
-top-two-page
-*********************/
-.top-two-container {
-  margin-bottom: 5%;
-  margin-top: 15%;
-}
-.top-two-container h1 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
-  margin-bottom: 5%;
-}
-.top-two-container p {
-  line-height: 1.8;
-  letter-spacing: 0.2px;
-}
-
-/*********************
-news-page
-*********************/
-.news-content {
-  text-align: left;
-  color: #333333;
-}
-
-.entry-container {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.news {
-  margin-bottom: 5%;
-  margin-top: 20%;
-}
-
-/*********************
-contact-page
-*********************/
-.form-container {
-  margin-top: 10%;
-  margin-bottom: 5%;
 }
 
 /*********************
@@ -10172,7 +10020,6 @@ Animated checkboxes
   margin: 0 auto;
   padding: 1em 0;
   position: relative;
-  font-weight: 300;
 }
 .ac-custom label {
   display: inline-block;
@@ -10180,7 +10027,7 @@ Animated checkboxes
   font-size: 1.2em;
   padding: 0 0 0 80px;
   vertical-align: top;
-  color: #333333;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -10332,10 +10179,9 @@ Animated checkboxes
 form
 *********************/
 .container-form {
-  background-color: rgba(248, 247, 240, 0.89);
+  background-color: #ffb487;
   margin-top: -20px;
   padding-top: 30px;
-  color: #333333;
 }
 
 .container-submitt {
@@ -10356,6 +10202,72 @@ form
   margin-bottom: 1%;
 }
 
-.form-newsletter__container {
-  font-weight: 300;
+/*********************
+top-page
+*********************/
+.top-text {
+  width: 40%;
+  position: relative;
+  top: -260px;
+  left: 30px;
+}
+
+.top-news-container {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-news-contents {
+  line-height: 1.8em;
+}
+
+/*********************
+top-two-page
+*********************/
+.top-two-container {
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+.top-two-container h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 5%;
+}
+.top-two-container p {
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+
+/*********************
+contact-page
+*********************/
+.form-container {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/*********************
+news-page
+*********************/
+.news-content {
+  text-align: left;
+  color: #484848;
+}
+
+.entry-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.news {
+  margin-bottom: 5%;
+  margin-top: 20%;
+}
+
+.testp {
+  box-shadow: 0 0 10px #a82f34;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }

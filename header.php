@@ -38,11 +38,7 @@
 			<div class="inner-wrap">
 				<div id="container">
 					<header class="header" role="banner">
-							
-						 <!-- This navs will be applied to the topbar, above all content 
-							  To see additional nav styles, visit the /parts directory -->
-						 <?php get_template_part( 'parts/nav', 'top-offcanvas' ); ?>
-								 	
+						<?php get_template_part( 'parts/nav', 'top-offcanvas' ); ?>
 					</header> <!-- end .header -->
 
 

@@ -21,24 +21,21 @@
 <div class="small-3 medium-2 small-centered columns newsletter-title">
  <img src="<?php bloginfo('stylesheet_directory');?>/assets/images/newsletter.png" alt="">
   </div>
-<form action="//haej.us11.list-manage.com/subscribe/post?u=a5c26df19ee004d331bb2248b&amp;id=84850c1494" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ac-custom ac-radio ac-fill" target="_blank" novalidate>
+<form action="//haej.us11.list-manage.com/subscribe/post?u=a5c26df19ee004d331bb2248b&amp;id=84850c1494" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ac-custom ac-radio ac-fill form-newsletter__container" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<label for="mce-NAME" class="no-animated">お名前 </label>
-			<input type="text" value="" name="NAME" class="required" id="mce-NAME">
+			<input type="text" value="" name="NAME" class="required" id="mce-NAME" placeholder="NAME">
 		</div>
 	</div>
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<label for="mce-EMAIL" class="no-animated">メールアドレス </label>
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-MAIL">
 		</div>
 	</div>
 	<div class="mc-field-group row">
 		<div class="medium-6 columns medium-centered">
-			<label for="mce-ADDRESS" class="no-animated">お住まい </label>
-			<input type="text" value="" name="ADDRESS" class="" id="mce-ADDRESS">
+			<input type="text" value="" name="ADDRESS" class="" id="mce-ADDRESS" placeholder="ADDRESS">
 		</div>
 	</div>
 	<div class="mc-field-group input-group">
@@ -91,9 +88,6 @@
 
 
 
-
-
-
 					<footer class="footer" role="contentinfo">
 						<div id="inner-footer" class="row">
 							<div class="large-12 medium-12 columns">
@@ -111,17 +105,18 @@
 		</div> <!-- end .off-canvas-wrap -->
 		<?php wp_footer(); ?>
      <script type="text/javascript" charset="utf-8">
+    var $target = $('.nav-top-c')
     function checkScroll(){
-    var startY = $('.nav-top-c').height() * 2; //The point where the navbar changes in px
+    var startY = $target.height() * 2;
 
     if($(window).scrollTop() > startY){
-        $('.nav-top-c').addClass("scrolled");
+        $target.addClass("scrolled");
     }else{
-        $('.nav-top-c').removeClass("scrolled");
+        $target.removeClass("scrolled");
     }
 }
 
-if($('.nav-top-c').length > 0){
+if($target.length > 0){
     $(window).on("scroll load resize", function(){
         checkScroll();
     });

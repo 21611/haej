@@ -8,7 +8,9 @@ CSS file.
 ******************************************************************/
 
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+@import "compass";
 // IMPORTING STYLES
 
 // Import normalize from Bower
@@ -34,10 +36,19 @@ CSS file.
 // Import your print styles
 @import "print";
 
+
 //animated grid
 @import "base_ag";
 @import "mediaqueries_ag";
 
 
 // Import your custom styles
-@import "main";
+@import "layout/main";
+
+//parcials
+@import "layout/header";
+@import "layout/top";
+@import "layout/top-two";
+@import "layout/news";
+@import "layout/contact";
+@import "layout/footer";
