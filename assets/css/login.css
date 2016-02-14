@@ -24,8 +24,7 @@ with the width and height.
   text-indent: -9999px;
   overflow: hidden;
   padding-bottom: 15px;
-  display: block;
-}
+  display: block; }
 
 /*
 You'll have to override some of the default styles

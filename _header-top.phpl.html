@@ -23,7 +23,7 @@
 	    		<meta name="theme-color" content="#121212">
 	    	<?php } ?>
 
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
 
 		<?php wp_head(); ?>
@@ -35,14 +35,10 @@
 
 	<body <?php body_class(); ?>>
 		<div class="off-canvas-wrap" data-offcanvas>
-			<div class="inner-wrap">
+			<div class="inner-wrap test">
 				<div id="container">
 					<header class="header" role="banner">
-							
-						 <!-- This navs will be applied to the topbar, above all content 
-							  To see additional nav styles, visit the /parts directory -->
-						 <?php get_template_part( 'parts/nav', 'top-offcanvas' ); ?>
-								 	
+						<?php get_template_part( 'parts/nav', 'top-offcanvas' ); ?>
 					</header> <!-- end .header -->
 
 
