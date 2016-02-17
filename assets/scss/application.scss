@@ -23,7 +23,15 @@ top-price_text
 
  */
 
+//fonts
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+//compass
+@import "compass";
+
+
+//foundation
 @import 'base/foundation/components/grid';
 @import 'base/foundation/components/accordion';
 @import 'base/foundation/components/alert-boxes';
@@ -45,7 +53,7 @@ top-price_text
 @import 'base/foundation/components/orbit';
 @import 'base/foundation/components/pagination';
 @import 'base/foundation/components/panels';
-@import 'base/foundation/components/pricing-tables';
+@import 'base/foundation/components/pricing-tableCs';
 @import 'base/foundation/components/progress-bars';
 @import 'base/foundation/components/range-slider';
 @import 'base/foundation/components/reveal';
@@ -61,9 +69,20 @@ top-price_text
 @import 'base/foundation/components/type';
 @import 'base/foundation/components/offcanvas';
 @import 'base/foundation/components/visibility';
+@import 'setting/settings';
 
+//vendor
+//animated grid
+@import "base/base_ag";
+@import "base/mediaqueries_ag";
 
-
+//original
 @import 'base/normalize';
-@import 'layout/top';
-@import 'layout/footer';
+
+//parcials
+@import "layout/header";
+@import "layout/top";
+@import "layout/top-two";
+@import "layout/news";
+@import "layout/contact";
+@import "layout/footer";
